@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  color: white;
+}
+
+section {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+h2 {
+  color: white;
+  text-shadow: 0 0 10px silver, 0 0 20px silver, 0 0 30px silver,
+    0 0 40px silver, 0 0 50px silver, 0 0 60px silver, 0 0 70px silver;
+  animation: glow 1s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px silver, 0 0 20px silver, 0 0 30px silver,
+      0 0 40px silver, 0 0 50px silver, 0 0 60px silver, 0 0 70px silver;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 10px silver, 0 0 20px silver, 0 0 30px silver,
+      0 0 40px silver, 0 0 50px silver, 0 0 60px silver, 0 0 70px silver;
+  }
+}
+
+p {
+  color: silver;
+  text-align: justify;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+footer a {
+  color: #4682b4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #87ceeb;
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.github-logo {
+  width: 200px;
+}
+
+.collaboration-img {
+  width: 250px;
+}
+
+.community-img {
+  width: 300px;
+}
+
+.link {
+  text-align: center;
+  color: black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+  background: linear-gradient(
+    135deg,
+    #121212 25%,
+    #1a1a1a 25%,
+    #1a1a1a 50%,
+    #121212 50%,
+    #121212 75%,
+    #1a1a1a 75%,
+    #1a1a1a
+  );
+  background-size: 40px 40px;
+  animation: move 4s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
